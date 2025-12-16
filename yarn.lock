@@ -939,30 +939,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bsky-feed-generator-hhc@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "bsky-feed-generator-hhc@workspace:."
-  dependencies:
-    "@atproto/api": "npm:^0.13.28"
-    "@atproto/identity": "npm:^0.2.1"
-    "@atproto/lexicon": "npm:^0.2.2"
-    "@atproto/repo": "npm:^0.3.2"
-    "@atproto/syntax": "npm:^0.1.2"
-    "@atproto/xrpc-server": "npm:^0.7.9"
-    "@types/better-sqlite3": "npm:^7.6.11"
-    "@types/express": "npm:^4.17.17"
-    "@types/node": "npm:^20.1.2"
-    better-sqlite3: "npm:^11.3.0"
-    dotenv: "npm:^16.0.3"
-    express: "npm:^4.18.2"
-    inquirer: "npm:^12.0.1"
-    kysely: "npm:^0.27.4"
-    multiformats: "npm:^9.9.0"
-    ts-node: "npm:^10.9.1"
-    typescript: "npm:^5.0.4"
-  languageName: unknown
-  linkType: soft
-
 "buffer@npm:^5.5.0":
   version: 5.7.1
   resolution: "buffer@npm:5.7.1"
@@ -1440,6 +1416,30 @@ __metadata:
   checksum: 10c0/e345083c4306b3aed6cb8ec551e26c36bab5c511e99ea4576a16750ddc8d3240e63826cc624f5ae17ad4dc82e68a253213b60d556c11bfad064b7607847ed07f
   languageName: node
   linkType: hard
+
+"feed-generator@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "feed-generator@workspace:."
+  dependencies:
+    "@atproto/api": "npm:^0.13.28"
+    "@atproto/identity": "npm:^0.2.1"
+    "@atproto/lexicon": "npm:^0.2.2"
+    "@atproto/repo": "npm:^0.3.2"
+    "@atproto/syntax": "npm:^0.1.2"
+    "@atproto/xrpc-server": "npm:^0.7.9"
+    "@types/better-sqlite3": "npm:^7.6.11"
+    "@types/express": "npm:^4.17.17"
+    "@types/node": "npm:^20.1.2"
+    better-sqlite3: "npm:^11.3.0"
+    dotenv: "npm:^16.0.3"
+    express: "npm:^4.18.2"
+    inquirer: "npm:^12.0.1"
+    kysely: "npm:^0.27.4"
+    multiformats: "npm:^9.9.0"
+    ts-node: "npm:^10.9.1"
+    typescript: "npm:^5.0.4"
+  languageName: unknown
+  linkType: soft
 
 "file-uri-to-path@npm:1.0.0":
   version: 1.0.0
@@ -2719,11 +2719,11 @@ __metadata:
 
 "typescript@patch:typescript@npm%3A^5.0.4#optional!builtin<compat/typescript>":
   version: 5.6.3
-  resolution: "typescript@patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=d69c25"
+  resolution: "typescript@patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/ac8307bb06bbfd08ae7137da740769b7d8c3ee5943188743bb622c621f8ad61d244767480f90fbd840277fbf152d8932aa20c33f867dea1bb5e79b187ca1a92f
+  checksum: 10c0/7c9d2e07c81226d60435939618c91ec2ff0b75fbfa106eec3430f0fcf93a584bc6c73176676f532d78c3594fe28a54b36eb40b3d75593071a7ec91301533ace7
   languageName: node
   linkType: hard
 
