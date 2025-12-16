@@ -9,7 +9,6 @@ RUN corepack enable
 
 # Copy package files and Yarn configuration
 COPY package.json yarn.lock .yarnrc.yml ./
-COPY .yarn ./.yarn
 
 # Install dependencies
 RUN yarn install --immutable
@@ -31,7 +30,6 @@ RUN corepack enable
 
 # Copy package files and Yarn configuration
 COPY package.json yarn.lock .yarnrc.yml ./
-COPY .yarn ./.yarn
 
 # Install production dependencies only
 RUN yarn workspaces focus --production
@@ -40,8 +38,11 @@ RUN yarn workspaces focus --production
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/src ./src
 
-# Create data directory for SQLite database with proper permissions
-RUN mkdir -p /app/data && chmod 777 /app/data
+# Create data directory for SQLite database
+RUN mkdir -p /app/data
+
+# Declare volume for persistent data
+VOLUME ["/app/data"]
 
 # Expose port (adjust if your app uses a different port)
 EXPOSE 3000
