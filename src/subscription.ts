@@ -13,7 +13,8 @@ export class FirehoseSubscription extends FirehoseSubscriptionBase {
     const postsToCreate = ops.posts.creates
       .filter((create) => {
         // #happyhardcore posts only
-        return create.record.text.toLowerCase().includes('#happyhardcore')
+        const lowerText = create.record.text.toLowerCase();
+        return lowerText.includes('#happyhardcore') || lowerText.includes('happy hardcore');
       })
       .map((create) => {
         // map posts to a db row

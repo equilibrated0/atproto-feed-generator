@@ -17,6 +17,7 @@ const run = async () => {
         type: 'input',
         name: 'handle',
         message: 'Enter your Bluesky handle:',
+        default: 'equilibrated.moe',
         required: true,
       },
       {
@@ -35,18 +36,21 @@ const run = async () => {
         type: 'input',
         name: 'recordName',
         message: 'Enter a short name or the record. This will be shown in the feed\'s URL:',
+        default: 'hhc',
         required: true,
       },
       {
         type: 'input',
         name: 'displayName',
         message: 'Enter a display name for your feed:',
+        default: 'Happy Hardcore',
         required: true,
       },
       {
         type: 'input',
         name: 'description',
         message: 'Optionally, enter a brief description of your feed:',
+        default: 'Happy Hardcore and stuff. Use the hashtag #happyhardcore or mention "happy hardcore".\nContributions welcome: https://github.com/equilibrated0/atproto-feed-generator',
         required: false,
       },
       {
