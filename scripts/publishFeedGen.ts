@@ -57,6 +57,7 @@ const run = async () => {
         type: 'input',
         name: 'avatar',
         message: 'Optionally, enter a local path to an avatar that will be used for the feed:',
+        default: 'avatars/hhc.png',
         required: false,
       },
       {
